@@ -6,49 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro to CSS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-    * {
-        color: gold;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-    }
-
-    body {
-        background-color: lightsalmon;
-    }
-    
-    #contact {
-        background-color: red;
-    }
-
-    p 
-    {
-        color: blue;
-    }
-/* class selector */
-    .my-ps {
-        background-color: white;
-    }
-
-    .my-width {
-        width: 400px
-    }
-    li
-    {
-        color: palevioletred;
-    }
-
-    footer {
-        background-color: yellow;
-    }
-    h3 {
-        background-color: blue;
-    }
-
-    footer > ul > li {
-        color: rgb(125, 24, 32);
-    }
+    /* in-file stles*/
 </style>
 
 <body>
@@ -64,9 +25,13 @@
             </ul>
         </nav>
     </header>
-    <p class="my-ps my-width">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est omnis et, cum reiciendis rerum nobis fugiat
+    <button onclick="handleColorChange()">press me</button>
+    <button onclick="handleAlert()">show alert</button>
+    <p class="my-ps my-width">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est omnis et, cum reiciendis
+        rerum nobis fugiat
         voluptate numquam eos dolorem asperiores qui debitis in provident voluptatem ex optio facilis! Ipsum.</p>
-    <P class="my-ps"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit esse aliquam commodi maiores id doloremque
+    <P class="my-ps"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit esse aliquam commodi maiores id
+        doloremque
         pariatur quia! Culpa deserunt laudantium suscipit eaque, error totam distinctio blanditiis quod minus natus
         consequuntur.
         Eligendi voluptatum soluta nemo, eaque ipsum libero molestiae consequatur nostrum adipisci deleniti reiciendis
@@ -78,18 +43,28 @@
         dolores molestias culpa nesciunt perspiciatis. Consectetur molestiae, odio illum accusamus corrupti eum enim.
         Blanditiis eligendi ipsa aperiam voluptates quibusdam incidunt voluptate, quasi iure in et deserunt vitae sequi
         corrupti accusantium impedit minima? Architecto in quaerat quam rerum neque eaque ratione magni illo omnis.
-        <p>
+    <p>
+        <marque>
             <h3>Ha Ha Ha I can do it </h3>
-            <footer>
-                <h3>Hi mom this is my CSS</h3>
-                <ul>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact</li>
-                </ul>
-            </footer>
+        </marque>
+    <main>
+        <div class="box">
+            <span>box1</span>
+            <span>2nd span</span>
+        </div>
+        <div class="box"><span>box2</span></div>
+        <div class="box"><span>box3</span></div>
+    </main>
+    <footer>
+        <h3>Hi mom this is my CSS</h3>
+        <ul>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
+    <script src="scripts.js"></script>
 
-        </p>
 </body>
 
 </html>
